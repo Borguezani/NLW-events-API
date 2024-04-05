@@ -17,7 +17,7 @@ app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
 app.register(fastifyCors, {
-    origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:3001", ]
+    origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:3001",["https://nlw-events-react.vercel.app/"] ]
 })
 app.register(fastifySwagger, {
     swagger: {
